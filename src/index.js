@@ -9,6 +9,11 @@
  * @return {Window}
  */
 function createWindow(name, width, height) {
+    var params = 'height='+height+',width='+width;
+    var newWin = window.open('test.html', name, params)
+    newWin.focus();
+
+    return newWin;
 }
 
 /**
@@ -17,6 +22,7 @@ function createWindow(name, width, height) {
  * @param {Window} window - окно, размер которого надо изменить
  */
 function closeWindow(window) {
+    window.close();
 }
 
 /**
