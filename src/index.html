@@ -18,9 +18,86 @@
                 <h1>Windows and Cookie actions</h1>
             </div>
 
-            <div class="col-12">
+            <div class="col-12 buttons">
+                <p class="h4">Windows</p>
                 <button class="openNew">Открыть новое окно</button>
                 <button class="closeNew">Закрыть новое окно</button>
+            </div>
+
+            <div class="col-12 buttons">
+                <p class="h4">Cookie</p>
+                <button class="showCookie">Увидеть текущие куки</button>
+                <button class="saveCookie">Записать новое в куки</button>
+                <button class="deleteCookie">Удалить новое из куки</button>
+                <p class="CookieList"></p>
+            </div>
+
+            <div class="col-12 buttons">
+                <p class="h4">Set tested cookie</p>
+                <button class="setTestedCookie">Save random cookie for test</button>
+            </div>
+
+            <div class="col-12 buttons cookieAddForm">
+
+                <p class="h4">Add any cookie to list</p>
+
+                <form>
+                    <input id="add-name-input" type="text" value="" placeholder="Enter cookie's name">
+                    <input id="add-value-input" type="text" value="" placeholder="Enter cookie's value">
+                    <button id="add-button" >Add cookie</button>
+                </form>
+            </div>
+
+            <div class="col-12 buttons cookieFilter">
+
+                <p class="h4">You can filter cookie by part of name or value</p>
+                <input id="filter-name-input" type="text" value="" placeholder="Search cookie by name or value">
+            </div>
+
+            <div class="col-12 buttons cookieWrap">
+
+                <p class="h4">Your currently cookie</p>
+                <p class="h6">Here you can see your currently cookie. Я добавил немного тестовых куки чтобы было с чем поиграться.</p>
+                <table id="list-table" class="cookie-table">
+                    <thead>
+                        <th>Имя куки</th>
+                        <th>Значение куки</th>
+                        <th>Удаление куки</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="col-12 text">
+                <p class="done">На странице должна быть таблица со списком имеющихся cookie:
+                 - имя
+                 - значение
+                 - удалить (при нажатии на кнопку, выбранная cookie удаляется из браузера и таблицы)
+                </p>
+
+                <p class="done"> На странице должна быть форма для добавления новой cookie:
+                 - имя
+                 - значение
+                 - добавить (при нажатии на кнопку, в браузер и таблицу добавляется новая cookie с указанным именем и значением)
+                </p>
+
+                <p class="done">Если добавляется cookie с именем уже существующией cookie, то ее значение в браузере и таблице должно быть обновлено</p>
+
+                <p class="done">На странице должно быть текстовое поле для фильтрации cookie</p>
+                <p class="done">В таблице должны быть только те cookie, в имени или значении которых есть введенное значение</p>
+                <p class="done">Если в поле фильтра пусто, то должны выводиться все доступные cookie</p>
+                <p class="done">Если дабавляемая cookie не соответсвуте фильтру, то она должна быть добавлена только в браузер, но не в таблицу</p>
+                <p class="done">Если добавляется cookie, с именем уже существующией cookie и ее новое значение не соответствует фильтру,
+                 то ее значение должно быть обновлено в браузере, а из таблицы cookie должна быть удалена</p>
+
+
+                <p>Запрещено использовать сторонние библиотеки. Разрешено пользоваться только тем, что встроено в браузер</p>
+                
+                
+                
+                
             </div>
 
         </div>
